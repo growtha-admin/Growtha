@@ -1,0 +1,154 @@
+.header {
+    position: fixed;
+    border-bottom: 1px solid var(--pale-black);
+    width: 100%;
+    background-color: var(--white);
+    z-index: 10;
+}
+
+.header_content {      
+    align-items: center;
+}
+
+.header_wrapper {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--pale-black);
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo-image{
+    width: 100px;
+}
+
+.header_links {
+    display: none;
+}
+
+.mobile_navbar {
+    padding: 30px 20px;
+    background-color: inherit;
+    display: none;
+}
+
+.remove_mobile_navbar {
+    display: block !important;
+}
+  
+
+/* .offnav_content {
+    display: block !important;
+}
+
+.staticstyle {
+    overflow: hidden;
+    filter: blur(2.5px);
+} */
+
+.nav_wrapper {
+    display: grid;   
+    grid-gap: 15px; 
+    box-sizing: border-box;        
+}
+
+.nav_wrapper a {
+    background-color: var(--verypale-blue);
+    padding: 18px 0px 18px 18px;
+    font-size: 17px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.nav_wrapper a:hover {
+    background-color: var(--pale-blue);    
+}
+
+
+
+@media only screen and (min-width: 360px) {
+   .header_wrapper {
+        padding: 18px 25px 18px 25px;
+   }   
+
+    .mobile_navbar {   
+        padding: 30px 25px;              
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .logo-image{
+        width: 110px;
+    }
+
+    .nav_wrapper {         
+        grid-gap: 20px;         
+    }
+
+    .nav_wrapper a {  
+        border-radius: 10px;           
+        padding: 20px ; 
+        font-size: 17.5px;       
+    }
+
+}
+
+@media only screen and (min-width: 650px) { 
+    .menu_btn {
+        display: none;
+    }
+
+    .header_wrapper {
+        padding: 25px;
+        align-items: center;
+        border-bottom: 0px;
+    }
+
+    .logo-image {
+        margin-bottom: -5px;
+    }
+
+    .mobile_navbar {
+        display: none !important;
+    }
+
+    .header_links {
+        display: flex;        
+        gap: 20px;
+    }
+
+    .header_links a {
+        background-color: var(--verypale-blue);
+        padding: 10px 15px;
+        display: block;
+        margin: -10px 0px -10px;
+        border-radius: 8px;
+    }
+
+    .header_links a:hover {
+        background-color: var(--pale-blue);
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .header_links {
+        gap: 30px;
+    }
+
+    .header_links a {
+        padding: 10px 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px) {
+    .header_content {
+        max-width: 1350px;
+        margin: 0px auto;
+    }
+ }

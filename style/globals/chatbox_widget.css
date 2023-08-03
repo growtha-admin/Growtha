@@ -1,0 +1,31 @@
+.ifr_div {
+    bottom: 25px;
+    position: fixed;
+    height: min-content;
+    right: 25px;
+    z-index: 15;  
+}
+
+.ifr_ifr {
+    height: min-content;
+}
+
+.cb_cta {
+    text-align: right;
+    box-sizing: border-box;
+    box-shadow: 1px -1px 10px 2px #a1a1a18e;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #a1a1a144;
+    border-radius: 50%; 
+    width: 58px;                                          
+}
+
+.cb_cta svg {                                                    
+    margin-bottom: -4px;
+}
+
+.cb_content {
+    display: grid;
+}

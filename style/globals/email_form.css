@@ -1,0 +1,92 @@
+.ns_content {
+    padding-bottom: 60px !important;
+}
+
+.ns_wrapper {
+    text-align: center;
+}
+
+.ns_desc {
+    padding-top: 15px;
+}
+
+.ns_form {
+    display: grid;
+    gap: 1.0em;
+    margin: 35px 0px 0px 0px;
+}
+
+.ns_input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-black);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.ns_submit {
+    font-family: 'Inter', sans-serif;
+    width: 120px;
+    border: 0px;
+}
+
+.ns_msg {
+    text-align: left;
+    margin: 5px 0px 10px 0px;
+    color: var(--red);
+    font-size: 14px;
+    font-family: inherit;
+    display: none;
+}
+
+.ns_formprivacymessage {
+    margin: 20px 0px 0px 0px;
+    display: block;
+    font-size: 15px;
+}
+
+.ns_formprivacymessage a {
+    font-size: inherit !important;
+}
+
+
+@media only screen and (min-width: 450px) {
+   
+    .ns_content {
+        padding-bottom: 70px !important;
+    }
+
+    .ns_wrapper {
+        max-width: 400px;
+        margin: 0px auto;
+    }
+}
+
+
+@media only screen and (min-width: 650px) {
+
+    .ns_wrapper {
+        max-width: 450px;
+        margin: 0px auto;
+    }
+
+    .ns_title {
+        font-size: 25px !important;
+    }
+
+    .ns_input {
+        padding: 18px;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+
+    .ns_msg {
+        font-size: 16px;
+    }
+
+    .ns_formprivacymessage {
+        margin: 20px 0px 0px 0px;
+        font-size: 16px;
+    }
+
+}

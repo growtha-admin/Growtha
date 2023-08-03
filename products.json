@@ -1,0 +1,42 @@
+[
+    {        
+        "product_id": 100,
+        "image": "/assets/product_image/product-placeholder-one.png",
+        "imagealttext": "Product Placeholder Image",
+        "type": "Product type",
+        "title": "Product Name",
+        "creatorname": "Product Creator Name",
+        "creatorimage": "assets/creator_image/creator_one.jpg",
+        "creatordesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit adaut",
+        "description": "Lorem ipsum dolor sit amet consectetur Quo eius consequatur qui. Error aperiam at dolores quia necessitatibus, voluptatem similique quas dolorem sapiente laborumque",
+        "price": "N10,000",
+        "url": "/a/100"
+    },
+    {        
+        "product_id": 100,
+        "image": "/assets/product_image/product-placeholder-one.png",
+        "imagealttext": "Product Placeholder Image",
+        "type": "Product type",
+        "title": "Product Name",
+        "creatorname": "Product Creator Name",
+        "creatorimage": "assets/creator_image/creator_one.jpg",
+        "creatordesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit adaut",
+        "description": "Lorem ipsum dolor sit amet consectetur Quo eius consequatur qui. Error aperiam at dolores quia necessitatibus, voluptatem similique quas dolorem sapiente laborumque",
+        "price": "N10,000",
+        "url": "/a/100"
+    },
+    {        
+        "product_id": 100,
+        "image": "/assets/product_image/product-placeholder-one.png",
+        "imagealttext": "Product Placeholder Image",
+        "type": "Product type",
+        "title": "Product Name",
+        "creatorname": "Product Creator Name",
+        "creatorimage": "assets/creator_image/creator_one.jpg",
+        "creatordesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit adaut",
+        "description": "Lorem ipsum dolor sit amet consectetur Quo eius consequatur qui. Error aperiam at dolores quia necessitatibus, voluptatem similique quas dolorem sapiente laborumque",
+        "price": "N10,000",
+        "url": "/a/100"
+    }
+    
+]
