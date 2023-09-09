@@ -7,7 +7,7 @@
 }
 
 .hero_content {
-    padding-top: 95px !important;
+    padding-top: 110px !important;
     padding-bottom: 40px !important;
 }
 
@@ -16,11 +16,12 @@
 }
 
 .hero_title {
-    font-size: 38px !important;    
+    font-size: 40px !important;    
 }
 
 .hero_desc {
-    font-size: 18.5px;
+    font-size: 20px;
+    font-weight: 500;
 
 }
 
@@ -126,53 +127,6 @@
     cursor: pointer;
     position: relative;
     display: inline-block;
-
-}
-
-.creator_details_wrapper {
-    position: absolute;
-    width: 180px;
-    margin: 5px 0px 0px 25px;
-    text-align: left;
-    /* visibility: hidden; */
-    z-index: 1;
-    border: 1px solid var(--border-black);
-    border-radius: 8px;
-    padding: 15px 20px;
-    background-color: var(--white);
-}
-
-
-/* .creator_name:hover .creator_details_wrapper {
-    position: absolute;
-    visibility: visible;
-} */
-
-.creator_biodetails {
-    display: flex;
-    align-items: center;
-    
-}
-
-.hr_cdw {
-    margin-top: 20px;
-    background-color: var(--border-black);
-    margin-bottom: 15px;
-}
-
-.creator_image {
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.details_creator_name {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.details_creator_desc {
-    font-size: 15px;
 }
 
 .product_details {
@@ -206,7 +160,7 @@
 
 @media only screen and (min-width: 360px) {
     .hero_content {
-        padding-top: 95px !important;
+        padding-top: 110px !important;
     }   
 }
 
@@ -236,11 +190,11 @@
 
 @media only screen and (min-width: 650px) {
     .hero_title {
-        font-size: 42px !important;    
+        font-size: 45px !important;    
     }
 
     .hero_desc {
-        font-size: 21px !important;
+        font-size: 23.5px !important;
     }
 
     .div_section_wrapper {
@@ -294,11 +248,11 @@
 
 @media only screen and (min-width: 1020px) {
     .hero_content {
-        padding-top: 100px !important;
+        padding-top: 130px !important;
     }
 
     .hero_title {
-        font-size: 44px !important;
+        font-size: 46px !important;
     }
 
     .hero_wrapper_div {
@@ -318,11 +272,11 @@
 @media only screen and (min-width: 1220px) {
 
     .hero_content {
-        padding-top: 110px !important;    
+        padding-top: 130px !important;    
     }
 
     .hero_title {
-        font-size: 46px !important;
+        font-size: 48px !important;
     }
 
     .div_section_wrapper {
@@ -332,6 +286,6 @@
 
 @media only screen and (min-width: 1300px) {
     .hero_content {
-        padding-top: 130px !important;    
+        padding-top: 150px !important;    
     }
 }

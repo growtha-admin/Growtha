@@ -25,7 +25,11 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     color: var(--black);
-    background-color: var(--background-white);
+    background-color: var(--white);
+}
+
+body.station_body {
+    overflow: hidden;
 }
 
 ul {
@@ -103,5 +107,4 @@ p {
         max-width: 1180px;
         margin: 0px auto;
     }
-
 }

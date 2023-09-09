@@ -1,42 +1,50 @@
 [
     {        
-        "product_id": 100,
+        "product_id": 218,
         "image": "/assets/product_image/product-placeholder-one.png",
         "imagealttext": "Product Placeholder Image",
-        "type": "Product type",
-        "title": "Product Name",
-        "creatorname": "Product Creator Name",
-        "creatorimage": "assets/creator_image/creator_one.jpg",
-        "creatordesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit adaut",
-        "description": "Lorem ipsum dolor sit amet consectetur Quo eius consequatur qui. Error aperiam at dolores quia necessitatibus, voluptatem similique quas dolorem sapiente laborumque",
-        "price": "N10,000",
-        "url": "/a/100"
+        "type": "Ebook",
+        "title": "How to raise money when there's no money",
+        "creatorname": "Clement Udoh",        
+        "description": "Get the secret and actionable steps to raising money from any business model without borrowing or begging anyone for Capital to reach your financial goals.",
+        "price": "N5,086",
+        "url": "/a/218"
     },
+    
     {        
-        "product_id": 100,
+        "product_id": 351,
         "image": "/assets/product_image/product-placeholder-one.png",
         "imagealttext": "Product Placeholder Image",
-        "type": "Product type",
-        "title": "Product Name",
-        "creatorname": "Product Creator Name",
-        "creatorimage": "assets/creator_image/creator_one.jpg",
-        "creatordesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit adaut",
-        "description": "Lorem ipsum dolor sit amet consectetur Quo eius consequatur qui. Error aperiam at dolores quia necessitatibus, voluptatem similique quas dolorem sapiente laborumque",
-        "price": "N10,000",
-        "url": "/a/100"
+        "type": "Digital Course",
+        "title": "Amazon KDP for Smartphones",
+        "creatorname": "Abraham Aiyejinna",        
+        "description": "Step - by - step; How to earn $200 - $1000 monthly from Amazon with just your smartphone and knowledge from this course.",
+        "price": "N20,000",
+        "url": "/a/351"
     },
+
     {        
-        "product_id": 100,
+        "product_id": 192,
         "image": "/assets/product_image/product-placeholder-one.png",
         "imagealttext": "Product Placeholder Image",
-        "type": "Product type",
-        "title": "Product Name",
-        "creatorname": "Product Creator Name",
-        "creatorimage": "assets/creator_image/creator_one.jpg",
-        "creatordesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit adaut",
-        "description": "Lorem ipsum dolor sit amet consectetur Quo eius consequatur qui. Error aperiam at dolores quia necessitatibus, voluptatem similique quas dolorem sapiente laborumque",
-        "price": "N10,000",
-        "url": "/a/100"
+        "type": "Digital Course and Mentorship",
+        "title": "Facebook Ads Sales Generator Program",
+        "creatorname": "Divine Akachukwu",        
+        "description": "Learn the powerful systen that helps people predictably and consistently get quality results from your Facebook Ads daily without wasting your Ads Budget",
+        "price": "N40,000",
+        "url": "/a/192"
+    },
+
+    {        
+        "product_id": 186,
+        "image": "/assets/product_image/product-placeholder-one.png",
+        "imagealttext": "Product Placeholder Image",
+        "type": "Digital Course",
+        "title": "CPL Marketing Success Course",
+        "creatorname": "Olamide Orija",        
+        "description": "Learn the Exact Marketing System DropBox used to build a $12 Billion empire in less than one year and have it work for you.",
+        "price": "N20,100",
+        "url": "/a/186"
     }
     
 ]
