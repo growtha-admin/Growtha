@@ -3,7 +3,7 @@
 }
 
 :root {
-    --black: #3d3d3d;
+    --black: #191919;
     --pale-black: #a1a1a165;
     --border-black: #a1a1a1;
     --white: #fff;
@@ -16,6 +16,7 @@
     --pale-blue: #007bff2a;
     --verypale-blue: #007bff13;
     --red: #dd2222;
+    --orange: #faa700;
 }
 
 html {
@@ -30,6 +31,22 @@ body {
 
 body.station_body {
     overflow: hidden;
+}
+
+.blue_text {
+    color: var(--blue);
+}
+
+.red_text {
+    color: var(--red);
+}
+
+.orange_text {
+    color: var(--orange);
+}
+
+.green_text {
+    color: var(--green);
 }
 
 ul {

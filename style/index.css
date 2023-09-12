@@ -103,7 +103,8 @@
 .product_type {
     font-size: .66rem;
     display: inline-block;
-    background-color: #dddddd;
+    background-color: var(--background-white-2);
+    border: 1px var(--pale-black) solid;
     padding: .5em .75em;
     border-radius: 2em;
 }
@@ -216,9 +217,7 @@
     }
 
     .product_type {
-        font-size: .76rem;
-        display: inline-block;
-        background-color: #dddddd;
+        font-size: .76rem;     
         padding: .6em .95em;
         border-radius: 2.5em;
     }
