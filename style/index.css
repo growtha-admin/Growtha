@@ -40,7 +40,7 @@
 
 .scroll_downbtn {
     background-color: var(--white);
-    margin-top: 25px;
+    margin-top: 35px;
     display: inline-block;
     border: 1px solid var(--black);
     padding: 10px 3px;
@@ -69,7 +69,7 @@
 /* Products */
 
 .ps_content {
-    padding-bottom: 50px !important;
+    padding-bottom: 70px !important;
 }
 
 .ps_desc {
@@ -107,6 +107,7 @@
     border: 1px var(--pale-black) solid;
     padding: .5em .75em;
     border-radius: 2em;
+    font-family: 'Sora', 'Inter', sans-serif;
 }
 
 
@@ -130,6 +131,10 @@
     display: inline-block;
 }
 
+.creator_name {
+    color: var(--black-2);
+}
+
 .product_details {
     display: grid;
     grid-template-columns: 45% 55%;
@@ -140,7 +145,8 @@
 .price {
     margin: auto auto auto 0px;
     font-weight: 500;
-    font-size: 1.1rem;   
+    font-size: 1.1rem;
+    font-family: 'Sora', 'Inter', sans-serif;   
 }
 
 .product_homebtn {
@@ -162,6 +168,7 @@
 @media only screen and (min-width: 360px) {
     .hero_content {
         padding-top: 110px !important;
+        padding-bottom: 50px !important;
     }   
 }
 
@@ -190,12 +197,16 @@
 }
 
 @media only screen and (min-width: 650px) {
+    .scroll_downbtn {        
+        margin-top: 45px;        
+    }   
+
     .hero_title {
         font-size: 45px !important;    
     }
 
     .hero_desc {
-        font-size: 23.5px !important;
+        font-size: 22px !important;
     }
 
     .div_section_wrapper {
@@ -204,7 +215,7 @@
     }
 
     .ps_content {
-        padding-bottom: 80px !important;
+        padding-bottom: 10px !important;
     }
     
     .product {
@@ -247,11 +258,16 @@
 
 @media only screen and (min-width: 1020px) {
     .hero_content {
-        padding-top: 130px !important;
+        padding-top: 150px !important;
+        padding-bottom: 50px !important;
     }
 
     .hero_title {
-        font-size: 46px !important;
+        font-size: 50px !important;
+    }
+
+    .hero_desc {
+        font-size: 25px !important;
     }
 
     .hero_wrapper_div {
@@ -271,11 +287,11 @@
 @media only screen and (min-width: 1220px) {
 
     .hero_content {
-        padding-top: 130px !important;    
+        padding-top: 150px !important;    
     }
 
     .hero_title {
-        font-size: 48px !important;
+        font-size: 55px !important;
     }
 
     .div_section_wrapper {

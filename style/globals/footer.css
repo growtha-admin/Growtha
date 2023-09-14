@@ -1,10 +1,10 @@
 .footer {
     background-color: var(--background-white-2);
-    color: var(--background-black) !important;
+    color: var(--black) !important;
 }
 
 .footer_content {
-    padding-top: 45px !important;
+    padding-top: 55px !important;
     padding-bottom: 60px !important;
 
 }
@@ -33,7 +33,7 @@
 
 .socialhandles {
     display: flex; 
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
@@ -55,6 +55,7 @@
 .copyright_info {
     padding: 30px 0px 45px 0px;
     font-weight: 500;
+    font-family: 'Sora', 'Inter', sans-serif;
 }
 
 .footer_finallinks {
@@ -69,7 +70,7 @@
 
 @media only screen and (min-width: 400px) {
     .footer_content {
-        padding-top: 60px !important;        
+        padding-top: 65px !important;        
     }
     
 }

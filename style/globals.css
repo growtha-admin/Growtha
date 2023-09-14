@@ -9,7 +9,7 @@
     --white: #fff;
     --background-white: #f3f3f3;
     --background-white-2: #eeeeee;
-    --background-black: #212529;
+    --black-2: #373737;
     --green: #09c269;
     --deep-blue: #0c64fa;
     --blue: #007bff;
@@ -29,9 +29,10 @@ body {
     background-color: var(--white);
 }
 
-body.station_body {
-    overflow: hidden;
+h1, h2, h3 {
+    font-family: 'Sora', 'Inter', sans-serif;
 }
+
 
 .blue_text {
     color: var(--blue);
@@ -81,6 +82,7 @@ p {
     text-align: center;
     cursor: pointer;
     display: inline-block;
+    font-family: 'Sora', 'Inter', sans-serif;
 }
 
 .inline_icon {
