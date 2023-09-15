@@ -70,7 +70,7 @@
 
 
 
-@media only screen and (min-width: 360px) {
+@media screen and (min-width: 360px) {
    .header_wrapper {
         padding: 18px 25px;
    }   
@@ -80,7 +80,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .logo-image{
         width: 100px;
     }
@@ -92,7 +92,7 @@
 
 }
 
-@media only screen and (min-width: 650px) { 
+@media screen and (min-width: 650px) { 
     .header_wrapper {
         padding: 25px;
         align-items: center;
@@ -115,8 +115,7 @@
     }
 
     .header_links {
-        display: flex;        
-        gap: 20px;    
+        display: flex;          
     }
 
     .header_links a {
@@ -128,10 +127,7 @@
 
 }
 
-@media only screen and (min-width: 900px) {
-    .header_links {
-        gap: 30px;
-    }
+@media screen and (min-width: 900px) {   
 
     .header_links a {
         padding: 10px 20px;
@@ -139,7 +135,7 @@
     
 }
 
-@media only screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
     .header_content {
         max-width: 1350px;
         margin: 0px auto;

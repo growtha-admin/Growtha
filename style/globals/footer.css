@@ -68,14 +68,14 @@
 
 
 
-@media only screen and (min-width: 400px) {
+@media screen and (min-width: 400px) {
     .footer_content {
         padding-top: 65px !important;        
     }
     
 }
 
-@media only screen and (min-width: 650px) {
+@media screen and (min-width: 650px) {
     .footer_content {
         padding-top: 75px !important;        
     }
