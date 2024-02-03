@@ -1,0 +1,163 @@
+@import url('globals.css');
+
+.hero_content {
+    padding-top: 110px;
+    border-bottom: 1px var(--background-white-2) solid;
+    padding-bottom: 40px;
+}
+
+.hero_title {
+    font-size: 36px;
+}
+
+.hero_desc {
+    margin: 15px 0px 65px 0px;
+    font-size: 18px;
+}
+
+
+
+.ha_article_img, .article_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ha_article_img {
+    margin-bottom: 20px;
+}
+
+.ha_textcontent {
+    margin: 0px;
+}
+
+.article_text {
+    margin: 25px 0px 0px 0px;
+}
+
+/* .ha_img_div {
+    max-width: 330px;
+}  */
+
+.highlight_article_wrapper {
+    max-width: 350px
+}
+
+.article {
+    max-width: 350px;
+}
+
+.article {
+    margin: 0px auto;
+    align-items: center;
+}
+
+.article_section_content {
+    padding-top: 30px !important;
+    padding-bottom: 40px !important;
+}
+
+.article_wrapper {
+    padding: 30px 0px;
+}
+
+.article_type {
+    font-size: .66rem;
+    display: inline-block;
+    background-color: var(--background-white-2);
+    border: 1px var(--pale-black) solid;
+    padding: .5em .75em;
+    border-radius: 2em;
+    font-family: 'Sora', 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.article_desc {
+    margin: 15px 0px 35px 0px;
+}
+
+.blog_btn {
+    padding: 0px;
+    color: var(--blue);
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 400px) {
+
+    .article_title {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 650px) {
+    
+    .hero_content {
+        padding-top: 130px;
+    }
+
+    .hero_desc {
+        margin-bottom: 80px;
+    }
+
+    .hero_title {
+        font-size: 40px;
+    }
+
+    .highlight_article_wrapper {       
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ha_textcontent {
+        margin-top: 0px;
+        width: 300px;
+    }   
+
+    .ha_article_img {
+        width: 320px;
+    }
+    
+    .article_section_wrapper {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    
+    .highlight_article_wrapper {
+        gap: 30px;
+    }
+
+    .article_title {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .article_section_wrapper {       
+        gap: 35px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .highlight_article_wrapper {
+        gap: 40px;
+    }
+
+    .ha_article_img {
+        width: 370px;
+    }
+
+    .ha_textcontent {
+        width: 350px;
+    }
+}
+

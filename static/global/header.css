@@ -1,0 +1,143 @@
+.header {
+    position: fixed;
+    border-bottom: 1px solid var(--pale-black);
+    width: 100%;
+    background-color: var(--white);
+    z-index: 100;
+}
+
+.header_content {      
+    align-items: center;
+}
+
+.header_wrapper {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo-image{
+    width: 90px;
+}
+
+.header_links {
+    display: none;
+}
+
+.mobile_navbar {
+    padding: 20px 20px 30px 20px;
+    background-color: inherit;
+    display: none;
+}
+
+.remove_mobile_navbar {
+    display: block !important;
+}
+  
+
+/* .offnav_content {
+    display: block !important;
+}
+
+.staticstyle {
+    overflow: hidden;
+    filter: blur(2.5px);
+} */
+
+.nav_wrapper {
+    display: grid;   
+    box-sizing: border-box;        
+}
+
+.nav_wrapper a {
+    padding: 20px 0px 20px 0px;
+    font-size: 17px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--background-white-2);
+    color: var(--black);
+    font-weight: 500;
+}
+
+.icons {
+    margin: 0px 0px -5px 5px;
+}
+
+
+
+
+@media screen and (min-width: 360px) {
+   .header_wrapper {
+        padding: 18px 25px;
+   }   
+
+    .mobile_navbar {   
+        padding: 30px 25px;              
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .logo-image{
+        width: 100px;
+    }
+
+    .nav_wrapper a {  
+        padding: 20px 0px; 
+        font-size: 18px;       
+    }
+
+}
+
+@media screen and (min-width: 650px) { 
+    .header_wrapper {
+        padding: 25px;
+        align-items: center;
+        border-bottom: 0px;
+    } 
+}
+
+@media screen and (min-width: 835px) {
+
+    .menu_btn {
+        display: none;
+    }
+
+    .logo-image {
+        margin-bottom: -5px;
+    }
+
+    .mobile_navbar {
+        display: none !important;
+    }
+
+    .header_links {
+        display: flex;          
+    }
+
+    .header_links a {
+        display: block;
+        margin: -15px 0px -15px;      
+        color: var(--black);
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 900px) {   
+
+    .header_links a {
+        padding: 10px 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .header_content {
+        max-width: 1350px;
+        margin: 0px auto;
+    }
+ }

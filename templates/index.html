@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growtha</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'global/global.css' %}">
+    <link rel="stylesheet" href="{% static 'global/header.css' %}">
+    <link rel="stylesheet" href="{% static 'global/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'global/email_section.css' %}">
+    <link rel="shortcut icon" href="{% static 'assets/logo/favicon.svg' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">
+        <div class="body_content">
+            <div class="wrapper">
+                
+                <header class="header" id="header">
+                    {% include 'global/header.html' %}                            
+                </header>
+
+                <main>
+                    <div class="main_content">
+                        <div class="main_wrapper">
+
+                            <div class="hero">
+                                <div class="hero_content content">
+                                    <div class="hero_wrapper">
+                                        <h1 class="hero_title">Growtha <span class="blue_text">Insights</span></h1>
+
+                                        <p class="hero_desc">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Similique quidem, temporibus ea <br> alias dolorem cum.</p>
+
+                                        <article class="highlight_article">
+                                            <div class="highlight_article_content">
+                                                <div class="highlight_article_wrapper">
+
+                                                    <div class="ha_img_div">
+                                                        <img class="ha_article_img" src="assets/product_image/product-placeholder-two.png" alt="">
+                                                        <span class="article_type">Article Type</span>
+                                                    </div>
+
+                                                    <div class="ha_textcontent">                                                        
+                                                        <h3 class="article_title">Ebook: A Guide to choosing the right digital products</h3>
+                                                        <p class="article_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolor molestiae velit. Repellat, nostrum voluptas.</p>
+                                                        <a href="" class="blog_btn">Read More ></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article_section">
+                                <div class="article_section_content content">
+                                    <div class="article_section_wrapper">
+
+                                        {% for content in contents %}
+                                        <article class="article">
+                                            <div class="article_wrapper">
+                                                <div class="article_img_div">
+                                                    <img class="article_img" src="{{content.image.url}}" alt="{{content.image_alt}}">
+                                                </div>
+
+                                                <div class="article_text">
+                                                    <span class="article_type">{{content.tag}}</span>
+                                                    <h3 class="article_title">{{content.title}}</h3>
+                                                    <p class="article_desc">{{content.description}}</p>
+                                                    <a href="" class="blog_btn">Read More ></a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        {% endfor %}
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section id="newsletter" class="newsletter_section">
+                                {% include 'global/email_section.html' %}
+                            </section>
+
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="footer" id="footer">
+                    {% include 'global/footer.html' %}
+                </footer>
+            </div>
+        </div>
+    </div>
+  
+    <script src="mobileNav.js"></script>
+</body>
+</html>
