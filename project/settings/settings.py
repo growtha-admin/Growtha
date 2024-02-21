@@ -1,15 +1,14 @@
+import os
 from pathlib import Path
 from decouple import config
-import os
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-
 SECRET_KEY = config('SECRET_KEY')
-
-ALLOWED_HOSTS = ["*"]
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,6 +18,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.apps.AppConfig', 
+    'ckeditor',
+    'ckeditor_uploader',  
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -67,6 +68,15 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+
+CKEDITOR_UPLOAD_PATH = 'assets/editor'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full'
+    }
+}
 
 STATIC_URL = 'static/'
 

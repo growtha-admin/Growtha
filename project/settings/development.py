@@ -1,8 +1,12 @@
 from project.settings.settings import *
+import os
 
 
 
 DEBUG = True
+
+ALLOWED_HOSTS = ["*"]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -18,6 +22,6 @@ MIDDLEWARE = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }

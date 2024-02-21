@@ -5,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <title>Growtha</title>
     <link rel="stylesheet" href="{% static 'index.css' %}">
     <link rel="stylesheet" href="{% static 'global/global.css' %}">
@@ -36,26 +38,28 @@
                                     <div class="hero_wrapper">
                                         <h1 class="hero_title">Growtha <span class="blue_text">Insights</span></h1>
 
-                                        <p class="hero_desc">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Similique quidem, temporibus ea <br> alias dolorem cum.</p>
+                                        <p class="hero_desc">Coming soon</p>
 
+                                        {% for featured_content in featured_contents %}
                                         <article class="highlight_article">
                                             <div class="highlight_article_content">
                                                 <div class="highlight_article_wrapper">
 
                                                     <div class="ha_img_div">
-                                                        <img class="ha_article_img" src="assets/product_image/product-placeholder-two.png" alt="">
-                                                        <span class="article_type">Article Type</span>
+                                                        <img class="ha_article_img" src="{{featured_content.image.url}}" alt="{{featured_content.image_alt}}">
+                                                        <span class="article_type">{{featured_content.tag}}</span>
                                                     </div>
 
                                                     <div class="ha_textcontent">                                                        
-                                                        <h3 class="article_title">Ebook: A Guide to choosing the right digital products</h3>
-                                                        <p class="article_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolor molestiae velit. Repellat, nostrum voluptas.</p>
-                                                        <a href="" class="blog_btn">Read More ></a>
+                                                        <h3 class="article_title">{{featured_content.title}}</h3>
+                                                        <p class="article_desc">{{featured_content.description}}</p>
+                                                        <a href="a/{{featured_content.url_hash}}" class="blog_btn">Read More ></a>
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </article>
+                                        {% endfor %}
 
                                     </div>
                                 </div>
@@ -76,7 +80,7 @@
                                                     <span class="article_type">{{content.tag}}</span>
                                                     <h3 class="article_title">{{content.title}}</h3>
                                                     <p class="article_desc">{{content.description}}</p>
-                                                    <a href="" class="blog_btn">Read More ></a>
+                                                    <a href="/a/{{content.url_hash}}" class="blog_btn">Read More ></a>
                                                 </div>
                                             </div>
                                         </article>

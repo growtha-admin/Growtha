@@ -9,11 +9,26 @@ from decouple import config
 
 
 
-def random_digits():
-    return ''.join(random.choice('123456789') for i in range(5))
+digits = '123456789'
 
-def hash_generator(initials):
-    return initials + ''.join(random.choice('23456789') for i in range(3))
+def random_digits():
+    return ''.join(random.choice(digits) for i in range(5))
+
+def tag_hash():
+    hash = []
+    random_num = random.choice(digits)
+    for i in range(3):
+        hash.append(random_num)
+
+    return f"t{''.join(hash)}"
+
+def author_hash():
+    hash = []
+    random_num = random.choice(digits)
+    for i in range(3):
+        hash.append(random_num)
+
+    return f"a{''.join(hash)}"
 
 
 
@@ -21,7 +36,7 @@ class BlogPost(models.Model):
 
     url_hash = models.SlugField(
         max_length=5, 
-        default=random_digits(),
+        default=random_digits,
         primary_key=True,
     )
 
@@ -46,12 +61,9 @@ class BlogPost(models.Model):
         default=''
     )
 
-    tag = models.ForeignKey(
+    tag = models.ManyToManyField(
         'app.Tag',
-        default='',
-        on_delete=models.CASCADE,
-        blank=False,
-        null=False,
+        blank=True,
     )
 
 
@@ -75,6 +87,11 @@ class BlogPost(models.Model):
 
     content = RichTextUploadingField()
 
+    is_featured = models.BooleanField(
+        default=False,
+        help_text='Featured Content? (Will be displayed as Featured Content on the homepage)'
+    )
+
     published_at = models.DateTimeField(
         default=datetime.now, 
         editable=True, 
@@ -84,7 +101,7 @@ class BlogPost(models.Model):
 
 
     class Meta:
-        ordering = ('title', 'published_at', 'url_hash', 'author',)
+        ordering = ('title', 'published_at', 'url_hash', 'author', 'is_featured', )
         verbose_name = 'Blog Post Content'
         verbose_name_plural = 'Blog Post Contents'
 
@@ -98,7 +115,7 @@ class Author(models.Model):
 
     author_hash = models.CharField(
         max_length=4, 
-        default=hash_generator('a'),
+        default=author_hash,
         primary_key=True
     )
 
@@ -182,8 +199,8 @@ class Author(models.Model):
         help_text='Link to Author\'s Website'
     )
 
-    joined_at = models.DateField(
-        default=datetime.now().date(),
+    joined_at = models.DateTimeField(
+        default=datetime.now,
         editable=True, 
         null=False, 
         blank=False, 
@@ -204,7 +221,7 @@ class Tag(models.Model):
 
     tag_hash = models.CharField(
         max_length=4, 
-        default=hash_generator('t'), 
+        default=tag_hash, 
         blank=False,
         primary_key=True
     )
