@@ -5,7 +5,7 @@
 pip install -r requirements.txt
 
 # Upgrade pip
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 
 # Collect static files
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
